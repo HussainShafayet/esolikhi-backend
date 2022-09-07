@@ -11,6 +11,5 @@ def posts(request):
     
     if request.method == 'POST':
         payload = json.loads(request.body.decode('utf-8'))
-        print('data')
         header("Access-Control-Allow-Origin: *")
     return HttpResponse('Hello this is first api')
