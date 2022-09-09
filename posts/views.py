@@ -1,6 +1,4 @@
 import json
-from turtle import pos
-from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from .models import Posts
 from rest_framework import status
@@ -43,6 +41,4 @@ def posts(request):
                 "message":"Post added successfully",
                 'data':payload,
                 })
-    else:
-        return HttpResponse('success')
     
