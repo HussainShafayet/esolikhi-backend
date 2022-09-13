@@ -63,7 +63,7 @@ INSTALLED_APPS = [
     'posts',
     "corsheaders",
     'rest_framework',
-    'user'
+    'accounts'
 ]
 
 MIDDLEWARE = [
@@ -155,7 +155,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 #AUTHENTICATION_MODEL
-AUTH_USER_MODEL = 'user.User'
+AUTH_USER_MODEL = 'accounts.User'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
